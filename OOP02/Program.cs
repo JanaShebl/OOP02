@@ -17,7 +17,21 @@
 
             #endregion
 
+            #region Q2
 
+            // a) Which class is the parent class?
+            // Shipment class
+
+            // b) Which class is the child class? 
+            // ExpressShipment
+
+            // c) What members are inherited by ExpressShipment? 
+            // public and protected members of the parent class
+
+            // d) Why is inheritance better than duplicating the same code in multiple classes?
+            // to improve our code reusability and maintainability
+
+            #endregion
         }
     }
 }
