@@ -6,7 +6,7 @@ namespace OOP02
 {
         internal class DeliveryCenter
         {
-            private Shipment[] shipments = new Shipment[10];
+            private Shipment[] shipments = new Shipment[20];
 
             // • Add an integer indexer this[int index] to get or set a shipment by position
             public Shipment this[int index]
@@ -58,6 +58,30 @@ namespace OOP02
                 return false;
             }
 
+        string _centerName;
+        public bool RemoveShipment(string trackingCode)
+        {
+            for(int i = 0; i < shipments.Length; i++)
+            {
+                if (shipments[i]!=null && shipments[i].TrackingCode == trackingCode)
+                {
+                    shipments[i] = null;
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public void PrintAllShipments()
+        {
+            for (int i = 0; i < shipments.Length; i++)
+            {
+                if (shipments[i] != null)
+                {
+                    shipments[i].PrintShipment();
+                }
+            }
         }
     }
+}
 
