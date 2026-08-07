@@ -32,6 +32,11 @@
             // to improve our code reusability and maintainability
 
             #endregion
+
+            #region Q3.1 , Q3.2
+            // 1. Shipment Class
+            // 2. Create Three Shipment Types 
+            #endregion
         }
     }
 }
