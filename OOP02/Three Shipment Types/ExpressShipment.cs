@@ -31,5 +31,16 @@ namespace OOP02.Three_Shipment_Types
         {
             ExtraFee = extraFee;
         }
+
+        public override void PrintShipment()
+        {
+            Console.WriteLine("Express Shipment\n");
+            Console.WriteLine($"Tracking Code : {TrackingCode}");
+            Console.WriteLine($"Description   : {Description}");
+            Console.WriteLine($"Weight        : {Weight} KG");
+            Console.WriteLine($"Delivery Fee  : {DeliveryFee} EGP");
+            Console.WriteLine($"Extra Fee     : {ExtraFee} EGP");
+            Console.WriteLine($"Estimated Cost: {EstimatedCost} EGP");
+        }
     }
 }

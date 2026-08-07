@@ -82,6 +82,15 @@ namespace OOP02
                 }
             }
         }
+
+        public string CenterName
+        {
+            get { return _centerName; }
+            set
+            {
+                    _centerName = value;
+            }
+        }
     }
 }
 
